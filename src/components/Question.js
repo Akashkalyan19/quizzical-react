@@ -1,10 +1,7 @@
 import React from "react"
-import Quiz from "./Quiz.js"
-
 export default function Question(props){
     const allAns = props.ians.slice(0);
     allAns.push(props.cans);
-    const [noOfCorrAns,setNoOfCorrAns]=React.useState(0)
     const [randomArray,setRandomArray]=React.useState([])
     const [btn,setBtn]=React.useState([ 
                     {
